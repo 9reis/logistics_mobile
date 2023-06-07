@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:logistics_mobile/view/widgets/separator_widget.dart';
 
 class LogisticMainPage extends StatefulWidget {
   const LogisticMainPage({super.key});
@@ -358,7 +360,7 @@ class _LogisticMainPageState extends State<LogisticMainPage> {
                                         style: TextStyle(fontSize: 18),
                                       ),
                                       Text(
-                                        '92 6593 3558 8373',
+                                        '45 6123 6762 4423',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 18),
@@ -379,6 +381,149 @@ class _LogisticMainPageState extends State<LogisticMainPage> {
                                   color: Colors.grey,
                                   thickness: 2,
                                 ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text('27 JAN 2023'),
+                                      Text('28 JAN 2023'),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 8, vertical: 4),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        'Boston',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16),
+                                      ),
+                                      Text(
+                                        'New York',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(8, 12, 8, 12),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(
+                                          radius: 3,
+                                          backgroundColor: Colors.black),
+                                      Expanded(
+                                        child: Container(
+                                          margin: EdgeInsets.symmetric(
+                                              horizontal: 4),
+                                          height: 2,
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                      CircleAvatar(
+                                          radius: 3,
+                                          backgroundColor: Colors.black),
+                                      Expanded(
+                                        child: Container(
+                                          margin: EdgeInsets.symmetric(
+                                              horizontal: 4),
+                                          height: 2,
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                      CircleAvatar(
+                                          radius: 3,
+                                          backgroundColor: Colors.black),
+                                      Expanded(
+                                        child: Container(
+                                          margin: EdgeInsets.symmetric(
+                                              horizontal: 4),
+                                          height: 2,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      CircleAvatar(
+                                          radius: 3,
+                                          backgroundColor: Colors.grey),
+                                    ],
+                                  ),
+                                ),
+                                Center(
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: Text(
+                                      'ON THE WAY TO FACILITY',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 16),
+                                  child: SeparatorWidget(),
+                                ),
+                                Row(
+                                  children: [
+                                    Expanded(
+                                        child: Column(
+                                      children: [
+                                        Text('DELIVERY COST'),
+                                        SizedBox(height: 6),
+                                        Text('\$10.99 ',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold))
+                                      ],
+                                    )),
+                                    Expanded(
+                                        child: Column(
+                                      children: [
+                                        Text('ITEMS #'),
+                                        SizedBox(height: 6),
+                                        Text(
+                                          '5 ',
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        )
+                                      ],
+                                    )),
+                                    Expanded(
+                                      child: Column(
+                                        children: [
+                                          Text('WEIGHT'),
+                                          SizedBox(height: 6),
+                                          Text('30.8 lbs ',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold))
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 16),
+                                  child: SeparatorWidget(),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.all(14),
+                                  child:
+                                      Icon(Icons.qr_code_2_outlined, size: 190),
+                                ),
+                                Text(
+                                  'SCAN QR CODE TO ACCEPT DELIVERY',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                )
                               ],
                             ),
                           ),
